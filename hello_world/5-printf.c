@@ -3,7 +3,7 @@
 /**
  * main - Learning to print
  *
- * Return - 0 when successfull
+ * Return - always 0
  */
 int main(void)
 {
