@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Making a task 
+ * main - Learning to print
  *
- * Return: 0 when successfull
+ * Return - 0 when successfull
  */
 int main(void)
 {
