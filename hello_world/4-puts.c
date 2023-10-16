@@ -2,7 +2,7 @@
 
 
 /**
- * Main - printf "Programming
+ * main - prints "Programming is like building a multilingual puzzle
  *
  * Return: Always 0
  */
