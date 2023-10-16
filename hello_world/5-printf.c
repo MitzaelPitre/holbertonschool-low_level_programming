@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Learning to print
+ * main - Learning C
  *
- * Return - always 0
+ * Return: 0 when successfull
  */
 int main(void)
 {
