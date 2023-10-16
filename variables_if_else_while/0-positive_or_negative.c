@@ -1,14 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
-/* Task zero */
+/* more headers goes there */
 #include <stdio.h>
-/* Checking if variable n is positive or negative */
+/* betty style doc for function main goes there */
 /**
  * main - Positive or negative
  *
  * Return: always 0
  */
-
 int main(void)
 {
 		int n;
