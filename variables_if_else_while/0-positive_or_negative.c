@@ -1,25 +1,26 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+/* Task zero */
 #include <stdio.h>
-/* betty style doc for function main goes there */
+/* Practice Variables */
 /**
- * main - Positive or negative
+ * main - Positive or negative variable
  *
  * Return: always 0
  */
+
 int main(void)
 {
-		int n;
+	int n;
 
-		srand(time(0));
-		n = rand() - RAND_MAX / 2;
-
-		if (n > 0)
-			printf("%d", n);
-		else if (n == 0)
-			printf("%d", n);
-		else
-			printf("%d", n);
-		return (0);
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+		printf("%d is positive", n);
+	else if (n == 0)
+		printf("%d is zero", n);
+	else
+		printf("%d is negative", n);
+	printf("n\");
+	return (0);
 }
