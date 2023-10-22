@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <math.h>
 /* Advanced Task */
 
 /**
@@ -8,7 +9,9 @@
  */
 
 int main(void)
+
 {
+
 	long x, maxf;
 	long number = 612852475143;
 	double square = sqrt(number);
