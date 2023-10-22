@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef MAIN_H_
+#define MAIN_H_
 
 int _putchar(c);
 int _isupper(int c);
@@ -14,4 +14,4 @@ void print_square(int size);
 void print_triangle(int size);
 void print_number(int n);
 
-#endif/
+#endif
