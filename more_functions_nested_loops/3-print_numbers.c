@@ -3,7 +3,7 @@
 /* Task number three */
 
 /**
- * print numbers - print the numbers since 0 to 9
+ * print_numbers - print the numbers since 0 to 9
  * Return: The numbers since 0 to 9
  */
 
