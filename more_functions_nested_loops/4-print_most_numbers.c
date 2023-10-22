@@ -20,8 +20,8 @@ void print_most_numbers(void)
 		}
 		else
 		{
-			_pucthar(x + '0');
+			_putchar(x + '0');
 		}
 	}
-	_pucthar('\n');
+	_putchar('\n');
 }
