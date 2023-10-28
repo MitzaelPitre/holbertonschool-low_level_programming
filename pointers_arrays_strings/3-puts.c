@@ -10,9 +10,13 @@
 
 void _puts(char *str)
 {
-	for (; *str != '\0'; str++);
+	if (str != NULL)
 	{
-		puts(const char *str);
+		while (*str != '\0')
+		{
+			putchar(*str);
+			str++;
+		}
 	}
-	_putchar('\n');
+	putchar('\n');
 }
