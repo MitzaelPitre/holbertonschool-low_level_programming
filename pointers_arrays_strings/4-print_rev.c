@@ -5,25 +5,20 @@
 /**
  * print_rev - print a string, in reverse.
  * @s: the string to get the reverse
- * Return: length
+ * Return: void
  */
 
 void print_rev(char *s)
 {
-	if (s == NULL)
-	{
-		return;
-	}
-	
-	int lenght = 0;
+	int c = 0;
 
-	while (s[length] != '0')
+	while (s[c] != '\0')
 	{
-		length++;
+		c++;
 	}
-	for (int i = length - 1; i >= 0; i--)
+	for (c -= 1; c >= 0; c--)
 	{
-		putchar(s[i]);
+		_putchar(s[c]);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
