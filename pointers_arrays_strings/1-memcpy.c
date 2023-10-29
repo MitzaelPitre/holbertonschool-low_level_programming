@@ -1,0 +1,19 @@
+#include "main.h"
+/* task one */
+
+/**
+ * _memcpy - copy the memory area
+ * @dest: input
+ * @src: input
+ * @n: input
+ * Return: always 0
+ */
+
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+		dest[i] = src[i];
+	return (dest);
+}
