@@ -4,8 +4,8 @@
 
 /**
  * alloc_grid - return a pointer to a dimensional array
- * @width: ...
- * @height: ...
+ * @width: <= 0.
+ * @height: <= 0
  * Return: NULL
  */
 
