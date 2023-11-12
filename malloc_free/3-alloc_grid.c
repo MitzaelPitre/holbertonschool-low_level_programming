@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /* task three */
 
 /**
@@ -10,29 +11,31 @@
 
 int **alloc_grid(int width, int height)
 {
-	int **output;;
+	int **array, i, j;
+	int len = width * height;
 
-	if (width <= 0 || height <= 0)
+	if (len <= 0)
 		return (NULL);
 
-	output = malloc(sizeof(int *) * height);
-
-	if (output == NULL)
+	array = (int **)malloc(sizeof(int *) * height);
+	if (array == NULL)
 		return (NULL);
 
 	for (i = 0; i < height; i++)
 	{
-		output[i] = malloc(sizeof(int) * width);
-
-		if (output[i] == NULL)
+		array[i] = (int *)malloc(sizeof(int) * width);
+		if (array[i] == NULL)
 		{
-			free(output);
-			for (j = 0; j <= height; j++)
-				free(output[j]);
+			for (i--; i >= 0; i--)
+				free(array[i]);
+			free(array);
 			return (NULL);
 		}
-		for (j = 0; j < width; j++)
-			output[i][j] = 0;
 	}
-	return (output);
+
+	for (i = 0; i < height; i++)
+		for (j = 0; j < width; j++)
+			array[i][j] = 0;
+
+	return (array);
 }
