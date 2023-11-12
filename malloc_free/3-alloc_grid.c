@@ -5,7 +5,7 @@
 /**
  * alloc_grid - 2 dimensional array
  * @width: number of columns
- * @height: number of columns
+ * @height: number of rows
  * Return: pointer to array
  */
 
@@ -18,7 +18,7 @@ int **alloc_grid(int width, int height)
 
 	output = malloc(sizeof(int *) * height);
 
-	if (output = NULL)
+	if (output == NULL)
 		return (NULL);
 
 	for (i = 0; i < height; i++)
