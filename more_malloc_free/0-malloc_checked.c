@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 /* first task */
 
 /**
@@ -9,11 +11,11 @@
 
 void *malloc_checked(unsigned int b)
 {
-	void *i;
+	void *m;
 
-	i = malloc(b);
+	m = malloc(b);
 
-	if (i == NULL)
+	if (m == NULL)
 		exit(98);
-	return (i);
+	return (m);
 }
