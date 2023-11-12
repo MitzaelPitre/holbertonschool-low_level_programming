@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 /* task three */
 
 /**
@@ -11,9 +10,7 @@
 
 int **alloc_grid(int width, int height)
 {
-	int **output;
-	i = 0;
-	j = 0;
+	int **output;;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
