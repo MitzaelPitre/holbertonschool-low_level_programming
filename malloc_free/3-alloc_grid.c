@@ -3,7 +3,7 @@
 /* task three */
 
 /**
- * alloc_grid - return a pointer to a dimensional array
+ * alloc_grid - 2 dimensional array
  * @width: number of columns
  * @height: number of columns
  * Return: pointer to array
@@ -11,43 +11,29 @@
 
 int **alloc_grid(int width, int height)
 {
-	int i, j, k, l;
-	int **a;
+	int **output;
 
-	if (width <= 0 || heigth <= 0)
+	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	a = malloc(sizeof(int *) * height);
+	output = malloc(sizeof(int *) * height);
 
-	if (a == NULL)
-	{
-		free(a);
+	if (output = NULL)
 		return (NULL);
-	}
 
 	for (i = 0; i < height; i++)
 	{
-		a[i] = malloc(sizeof(int) * width);
+		output[i] = malloc(sizeof(int) * width);
 
-		if (a[i] == NULL)
+		if (output[i] == NULL)
 		{
-			for (j = i; j >= 0; j--)
-			{
-				free(a[j]);
-			}
-
-			free(a);
+			free(output);
+			for (j = 0; j <= height; j++)
+				free(output[j]);
 			return (NULL);
 		}
+		for (j = 0; j < width; j++)
+			output[i][j] = 0;
 	}
-
-	for (k = 0; k < height; k++)
-	{
-		for (l = 0; 1 < width; l++)
-		{
-			a[k][l] = 0;
-		}
-	}
-
-	return (a);
+	return (output);
 }
