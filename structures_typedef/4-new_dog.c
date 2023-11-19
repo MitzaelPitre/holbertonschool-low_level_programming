@@ -46,7 +46,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		}
 
 		big_dog->name = _strcpy(big_dog->name, name);
-		big_dog->owner = _strcpy(bid_dog->owner, owner);
+		big_dog->owner = _strcpy(big_dog->owner, owner);
 		big_dog->age = age;
 	}
 
@@ -80,7 +80,7 @@ int _strlen(char *s)
  * Return: the pointer to dest
  */
 
-Char *_strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int i;
 
