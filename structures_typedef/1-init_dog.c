@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include "dog.h"
-/* task zero */
+/* task one */
 
 /**
  * init_dog - Initializes a dog structure
