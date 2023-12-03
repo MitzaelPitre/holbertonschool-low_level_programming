@@ -8,11 +8,11 @@
  * Return: address of the new element. NULL it is failed
  */
 
-listint_t *add_nodeint(listint_t **head, const int n)
+dlistint_t *add_nodeint(dlistint_t **head, const int n)
 {
-	listint_t *new;
+	dlistint_t *new;
 
-	new = malloc(sizeof(listint_t));
+	new = malloc(sizeof(dlistint_t));
 
 	if (new == NULL)
 		return (NULL);
