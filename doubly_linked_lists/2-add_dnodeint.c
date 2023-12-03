@@ -7,7 +7,7 @@
  * @n: n element
  * Return: address of the new element, NULL if it failed
  */
-	n
+
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *new;
