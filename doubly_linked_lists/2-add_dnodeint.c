@@ -2,13 +2,13 @@
 /* task two */
 
 /**
- * add_nodeint - add a new node at the beginning of a linked
+ * add_dnodeint - add a new node at the beginning of a linked
  * @head: head of a list
  * @n: n element
  * Return: address of the new element. NULL it is failed
  */
 
-dlistint_t *add_nodeint(dlistint_t **head, const int n)
+dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *new;
 

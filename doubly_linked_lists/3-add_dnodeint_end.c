@@ -2,13 +2,13 @@
 /* task three */
 
 /**
- * add_nodeint_end - add a new node at the end of a linked list
+ * add_dnodeint_end - add a new node at the end of a linked list
  * @head: head of a list
  * @n: n element
  * Return: address of the new element. NULL if it failed
  */
 
-dlistint_t *add_nodeint_end(dlistint_t **head, const int n)
+dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *new;
 	dlistint_t *temp;
