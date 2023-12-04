@@ -14,5 +14,10 @@ int main(void)
     print_dlistint(head);
     printf("-> %lu elements\n", dlistint_len(head));
 
+    insert_dnodeint_at_index(&head, 1, 98);
+    printf("After inserting 98 at index 1:\n");
+    print_dlistint(head);
+    printf("-> %lu elements\n", dlistint_len(head));
+
     return (0);
 }
