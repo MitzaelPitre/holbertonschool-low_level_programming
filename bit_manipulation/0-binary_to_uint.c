@@ -8,7 +8,7 @@
  * otherwise the convert number
  */
 
-unsigned int binary_to_uint(const char *b)
+unsigned int binary_to_unitt(const char *b)
 {
 	unsigned int num = 0, mult = 1;
 	int len;
