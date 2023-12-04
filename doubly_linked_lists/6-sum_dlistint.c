@@ -2,29 +2,21 @@
 /* task six */
 
 /**
- * pop_dlistint - deletes the head node of a linked list
+ * sum_listint - returns the sum of all the data (n) of a linked list
  * @head: head of a list
- * Return: head node's data
+ * Return: sum of all the data (n).
  */
 
-int pop_dlistint(dlistind_t **head)
+int sum_listint(listint_t *head)
 {
-	int hnode;
-	dlistint_t *h;
-	dlistint_t *curr;
+	int sum;
 
-	if (*head == NULL)
-		return (0);
+	sum = 0;
+	while (head != NULL)
+	{
+		sum += head->n;
+		head = head->next;
+	}
 
-	curr = *head;
-
-	hnode = curr->n;
-
-	h = curr->next;
-
-	free(curr);
-
-	*head = h;
-
-	return (hnode);
+	return (sum);
 }
