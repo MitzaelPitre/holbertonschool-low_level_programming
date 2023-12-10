@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-	int file_from, file-to;
+	int file_from, file_to;
 	int num1 = 1024, num2 = 0;
 	char buf[1024];
 
