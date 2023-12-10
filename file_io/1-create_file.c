@@ -2,7 +2,7 @@
 /* task one */
 
 /**
- * create_file - function that creates a file 
+ * create_file - function that creates a file
  * @filename: variable pointer
  * @text_content: content file
  * Description: Creates a function that creates a file
