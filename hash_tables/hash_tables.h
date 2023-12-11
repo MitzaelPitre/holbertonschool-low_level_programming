@@ -87,4 +87,8 @@ void shash_table_print(const shash_table_t *);
 void shash_table_print_rev(const shash_table_t *);
 void shash_table_delete(shash_table_t *);
 
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+
 #endif /* HASH_TABLES_H */
