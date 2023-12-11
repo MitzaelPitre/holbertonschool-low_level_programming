@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-#include <stdlib.h>
 /* last task */
 
 /**
@@ -7,7 +6,7 @@
  * @head: a pointer to the head of the singly-linked list
  */
 
-void hash_chain_delete(hash_table_t *head)
+void hash_chain_delete(hash_node_t *head)
 {
 	if (head)
 	{
