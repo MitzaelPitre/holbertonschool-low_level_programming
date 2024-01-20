@@ -12,7 +12,6 @@
  * @express: Pointer to the next node in the express lane
  * Description: singly linked list node structure with an express lane
  */
-
 typedef struct skiplist_s
 {
 	int n;
@@ -28,7 +27,6 @@ typedef struct skiplist_s
  * @next: Pointer to the next node
  * Description: singly linked list node structure
  */
-
 typedef struct listint_s
 {
 	int n;
