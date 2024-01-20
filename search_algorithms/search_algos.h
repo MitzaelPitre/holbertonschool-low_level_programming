@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 /**
- * struct skiplist - Singly linked list with an express lane
+ * struct skiplist_s - Singly linked list with an express lane
  * @n: Integer
  * @index: Index if the node in the list
  * @next: Pointer to the next node
